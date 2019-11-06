@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+  $("#tg").click(function(){
+    $("p").toggle();
+  });
+  $("#blue").click(function(){
+      $("#ii").addClass("blue1");
+  });
+  $("#red").click(function(){
+      $("#ii").addClass("red1");
+  });
+});
+</script>
+<style>
+    .blue1 {
+      color: blue;
+    }
+    .red1{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+<p>If you click on the "Hide" button, I will disappear.</p>
+<div id="ii">Hello Jquery</div>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="tg">Toggle</button>
+<button id="red">RED</button>
+<button id="blue">BLUE</button>
+</body>
+</html>
