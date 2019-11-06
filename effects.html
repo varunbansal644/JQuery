@@ -14,7 +14,7 @@ $(document).ready(function(){
     $("p").toggle();
   });
   $("#blue").click(function(){
-      $("#ii").addClass("blue1");
+      $("#ii").removeClass("red1").addClass("blue1");
   });
   $("#red").click(function(){
       $("#ii").addClass("red1");
@@ -32,10 +32,11 @@ $(document).ready(function(){
 </head>
 <body>
 <p>If you click on the "Hide" button, I will disappear.</p>
-<div id="ii">Hello Jquery</div>
+
 <button id="hide">Hide</button>
 <button id="show">Show</button>
 <button id="tg">Toggle</button>
+<div id="ii">Hello Jquery</div>
 <button id="red">RED</button>
 <button id="blue">BLUE</button>
 </body>
